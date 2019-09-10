@@ -463,7 +463,7 @@ pt:
     Description: "Report tax charged on orders. Only includes orders that have been paid."
     Title: Tax
   SilverShop\ShopEmail:
-    AdminNotificationSubject: "Order #{OrderNo} notification"
+    AdminNotificationSubject: "Notificação de Pedido #{OrderNo}"
     AdminNotificationTitle: "Shop Receipt"
     CancelSubject: "Order #{OrderNo} cancelled by member"
     ConfirmationSubject: "Order #{OrderNo} confirmation"

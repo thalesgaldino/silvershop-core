@@ -1,0 +1,161 @@
+---
+en_GB:
+  AccountPage:
+    Message: "You'll need to login before you can access the account page. If you are not registered, you won't be able to access it until you'll make your first order, otherwise please enter your details below."
+    NOPAGE: "No AccountPage on this site - please create one !"
+  AccountPage.ss:
+    COMPLETED: "Completed Orders"
+    HISTORY: "Your Order History"
+    INCOMPLETE: "Incomplete Orders"
+    NOCOMPLETED: "No completed orders were found."
+    NOINCOMPLETE: "No incomplete orders were found."
+    ORDER: Order
+    READMORE: "Read more on Order #%s"
+  AccountPage_order.ss:
+    BACKTOCHECKOUT: "Click here to go to the checkout page"
+    EMAILDETAILS: "A copy of this has been sent to your email address confirming the order details."
+  Cart.ss:
+    ADDONE: "Add one more of \"%s\" to your cart"
+    CheckoutClick: "Click here to go to the checkout"
+    CheckoutGoTo: "Go to checkout"
+    HEADLINE: "My Cart"
+    NOITEMS: "There are no items in your cart"
+    PRICE: Price
+    READMORE: "Click here to read more on \"%s\""
+    REMOVEALL: "Remove all of \"%s\" from your cart"
+    REMOVEONE: "Remove one of \"%s\" from your cart"
+    SUBTOTAL: Subtotal
+    TOTAL: Total
+  CheckoutPage:
+    NOPAGE: "No CheckoutPage on this site - please create one !"
+  CheckoutPage.ss:
+    CHECKOUT: Checkout
+    ORDERSTATUS: "Order Status"
+    PROCESS: Process
+  ChequePayment:
+    MESSAGE: "Payment accepted via Cheque. Please note : products will not be shipped until payment has been received."
+  MemberForm:
+    DETAILSSAVED: "Your details have been saved"
+    LOGGEDIN: "You are currently logged in as"
+  Order:
+    INCOMPLETE: "Order Incomplete"
+    SUCCESSFULL: "Order Successful"
+  OrderInformation.ss:
+    ADDRESS: Address
+    AMOUNT: Amount
+    BUYERSADDRESS: "Buyer's Address"
+    CITY: City
+    COUNTRY: Country
+    CUSTOMERDETAILS: "Customer Details"
+    DATE: Date
+    DETAILS: Details
+    EMAIL: Email
+    MOBILE: Mobile
+    NAME: Name
+    ORDERSUMMARY: "Order Summary"
+    PAYMENTID: "Payment ID"
+    PAYMENTINFORMATION: "Payment Information"
+    PAYMENTMETHOD: Method
+    PAYMENTSTATUS: "Payment Status"
+    PHONE: Phone
+    PRICE: Price
+    PRODUCT: Product
+    QUANTITY: Quantity
+    READMORE: "Click here to read more on \"%s\""
+    SHIPPINGDETAILS: "Shipping Details"
+    SUBTOTAL: Sub-total
+    TOTAL: Total
+    TOTALOUTSTANDING: "Total outstanding"
+    TOTALPRICE: "Total Price"
+  OrderInformation_Editable.ss:
+    ADDONE: "Add one more of \"%s\" to your cart"
+    NOITEMS: "There are <strong>no</strong> items in your cart."
+    ORDERINFORMATION: "Order Information"
+    PRICE: Price
+    PRODUCT: Product
+    QUANTITY: Quantity
+    READMORE: "Click here to read more on \"%s\""
+    REMOVEALL: "Remove all of \"%s\" from your cart"
+    REMOVEONE: "Remove one of \"%s\" from your cart"
+    SUBTOTAL: Sub-total
+    TABLESUMMARY: "The contents of your cart are displayed in this form and summary of all fees associated with an order and a rundown of payments options."
+    TOTAL: Total
+    TOTALPRICE: "Total Price"
+  OrderInformation_NoPricing.ss:
+    ADDRESS: Address
+    BUYERSADDRESS: "Buyer's Address"
+    CITY: City
+    COUNTRY: Country
+    CUSTOMERDETAILS: "Customer Details"
+    EMAIL: Email
+    MOBILE: Mobile
+    NAME: Name
+    ORDERINFO: "Information for Order #"
+    PHONE: Phone
+    TABLESUMMARY: "The contents of your cart are displayed in this form and summary of all fees associated with an order and a rundown of payments options."
+  OrderInformation_PackingSlip.ss:
+    DESCRIPTION: Description
+    ITEM: Item
+    ORDERDATE: "Order Date"
+    ORDERNUMBER: "Order Number"
+    PAGETITLE: "Shop Print Orders"
+    QUANTITY: Quantity
+    TABLESUMMARY: "The contents of your cart are displayed in this form and summary of all fees associated with an order and a rundown of payments options."
+  OrderInformation_Print.ss:
+    PAGETITLE: "Print Orders"
+  OrderReport:
+    CHANGESTATUS: "Change Order Status"
+    NOTEEMAIL: Note/Email
+    SENDNOTETO: "Send this note to %s (%s)"
+  Order_ReceiptEmail.ss:
+    HEADLINE: "Shop Order Receipt"
+    TITLE: "Shop Receipt"
+  Order_StatusEmail.ss:
+    HEADLINE: "Shop Status Change"
+    STATUSCHANGE: "Status changed to \"%s\" for Order #"
+    TITLE: "Shop Status Change"
+  PaymentInformation.ss:
+    AMOUNT: Amount
+    DATE: Date
+    DETAILS: Details
+    PAYMENTID: "Payment ID"
+    PAYMENTINFORMATION: "Payment Information"
+    PAYMENTMETHOD: Method
+    PAYMENTSTATUS: "Payment Status"
+    TABLESUMMARY: "The contents of your cart are displayed in this form and summary of all fees associated with an order and a rundown of payments options."
+  Product.ss:
+    ADD: "Add \"%s\" to your cart"
+    ADDLINK: "Add this item to cart"
+    ADDONE: "Add one more of \"%s\" to your cart"
+    AUTHOR: Author
+    FEATURED: "This is a featured product."
+    GOTOCHECKOUT: "Go to the checkout now"
+    GOTOCHECKOUTLINK: "» Go to the checkout"
+    IMAGE: "%s image"
+    ItemID: "Item #"
+    MODEL: Model
+    NOIMAGE: "Sorry, no product image for \"%s\""
+    QUANTITYCART: "Quantity in cart"
+    REMOVE: "Remove \"%s\" from your cart"
+    REMOVEALL: "Remove one of \"%s\" from your cart"
+    REMOVELINK: "» Remove from cart"
+    SIZE: Size
+  ProductCategory.ss:
+    FEATURED: "Featured Products"
+  ProductCategoryItem.ss:
+    ADD: "Add \"%s\" to your cart"
+    ADDLINK: "Add this item to cart"
+    ADDONE: "Add one more of \"%s\" to your cart"
+    AUTHOR: Author
+    GOTOCHECKOUT: "Go to the checkout now"
+    GOTOCHECKOUTLINK: "» Go to the checkout"
+    IMAGE: "%s image"
+    NOIMAGE: "Sorry, no product image for \"%s\""
+    QUANTITYCART: "Quantity in cart"
+    READMORE: "Click here to read more on \"%s\""
+    READMORECONTENT: "Click to read more »"
+    REMOVE: "Remove \"%s\" from your cart"
+    REMOVEALL: "Remove one of \"%s\" from your cart"
+    REMOVELINK: "» Remove from cart"
+  ProductMenu.ss:
+    GOTOPAGE: "Go to the %s page"

@@ -1,0 +1,88 @@
+---
+Name: app
+After: silvershop/config#shopconfig
+---
+SilverShop\Checkout\CheckoutConfig:
+  member_creation_enabled: true
+  membership_required: true
+
+SilverStripe\Control\Email\Email:
+  admin_email: example@example.com
+
+SilverStripe\i18n\i18n:
+  default_locale: en_NZ
+
+SilverShop\Model\Order:
+  modifiers:
+    - 'SilverShop\Model\Modifiers\Shipping\Simple'
+    - 'SilverShop\Model\Modifiers\Tax\FlatTax'
+  cancel_before_payment: false
+  cancel_before_processing: false
+  cancel_before_sending: false
+  cancel_before_sending: false
+  cancel_after_sending: false
+  # Change / add order status, added Refunded
+  db:
+    Status: Enum('Unpaid,Paid,Processing,Refunded,Sent,Complete,AdminCancelled,MemberCancelled,Cart','Cart')
+  # For logging order status changes & emailing notifications to customers
+  log_status:
+    - Processing
+    - Sent
+    - MemberCancelled
+    - AdminCancelled
+
+SilverShop\Forms\OrderActionsForm:
+  # allow_paying: false # disable prompt to pay an unpaid order on the AccountPage
+  # allow_cancelling: true # allow cancelling of an order on the AccountPage
+  email_notification: true  # Send email upon cancellation of an order
+  allow_cancelling: true
+  allow_paying: true
+
+#SilverShop\Checkout\OrderProcessor:
+#  send_confirmation: true  #send order confirmation when an order is placed, but unpaid
+#  send_admin_notification: true  # copy to admin
+
+SilverShop\Page\Product:
+  # global_allow_purchase: false # prevents the purchase of any product and disables adding to cart
+  # length_unit: 'M'
+  # weight_unit: 'Pounds'
+  db: # Revised decimal places
+    BasePrice: 'Currency(19,2)'
+    Weight: 'Decimal(12,3)'
+    Height: 'Decimal(12,3)'
+    Width: 'Decimal(12,3)'
+    Depth: 'Decimal(12,3)'
+
+# Change the dimensions of product thumbnails
+SilverShop\Extension\ProductImageExtension:
+  thumbnail_width: 140
+  thumbnail_height: 100
+  content_image_width: 200
+  large_image_width: 200
+
+SilverShop\Page\ProductCategory:
+  include_child_groups: true
+  must_have_price: true
+  sort_options:
+    'Title' : 'Alphabetical'
+    'Price' : 'Lowest Price'
+
+SilverShop\Extension\ShopConfigExtension:
+  base_currency: 'NZD'
+  email_from: sales@myshop.com
+
+SilverShop\ORM\FieldType\ShopCurrency:
+  decimal_delimiter: '.'
+  thousand_delimiter: ','
+  # european style currencies, e.g. 45,00 € instead of €45,00
+  append_symbol: true
+
+SilverShop\Cart\ShoppingCartController:
+  # Redirect to the cart page after manipulating the shopping cart
+  direct_to_cart_page: true
+  # disable security token for cart-links
+  disable_security_token: true
+
+SilverShop\Reports\ShopPeriodReport:
+  # IF you are using the silverware/calendar module, uncomment the following line
+  #disable_set_date_format: true

@@ -1,0 +1,172 @@
+pt:
+  SilverShop\Admin\OrdersAdmin:
+    MENUTITLE: Pedidos
+    ReceiptTitle: "{SiteTitle} Pedido {OrderNo}"
+  SilverShop\Admin\ProductCatalogAdmin:
+    MENUTITLE: Catalogo
+  SilverShop\Admin\ZoneAdmin:
+    MENUTITLE: Zonas
+  SilverShop\Cart\ShoppingCart:
+    CannotPurchase: "O {Title} não pode ser comprado."
+    Checkout: Carrinho
+    Cleared: "PT Cart was successfully cleared."
+    ContinueShopping: "PT Continue Shopping"
+    Headline: "PT Shopping cart"
+    InvalidSecurityToken: "PT Invalid security token, possible CSRF attack."
+    ItemAdded: "PT Item has been added successfully."
+    ItemNotFound: "PT Item not found."
+    ItemRemoved: "PT Item has been successfully removed."
+    ItemsInCartPlural: 'PT There are <a href="{link}">{quantity} items</a> in your cart.'
+    ItemsInCartSingular: 'PT There is <a href="{link}">1 item</a> in your cart.'
+    NoCartFound: "PT No cart found."
+    NoCartInitialised: "PT no cart initialised"
+    NoItems: "PT There are no items in your cart."
+    NoOrder: "PT No current order."
+    ProceedToCheckout: "Finalizar pedido"
+    ProductNotFound: "PT Product not found."
+    QuantitySet: "PT Quantity has been set."
+    RemoveAllTitle: 'PT Remove all of "{Title}" from your cart'
+    RemoveTitle: 'PT Remove "{Title}" from your cart.'
+    TableSummary: "PT Current contents of your cart."
+  SilverShop\Page\ProductCategory:
+    Alphabetical: Alfabético
+    DESCRIPTION: "Categoria do produto na loja"
+    PLURALNAME: Categorias
+    Price: Preço
+    SINGULARNAME: Categoria
+    belongs_many_many_Products: Produtos
+  SilverShop\Page\Product:
+    AddToCart: "Adicionar ao carrinho"
+    AddToCartTitle: 'Add "{Title}" to your cart'
+    AdditionalCategories: "Additional Categories"
+    AllowPurchase: "Allow product to be purchased"
+    Category: Category
+    CategoryDescription: "This is the parent page or default category."
+    Code: "Product Code"
+    DESCRIPTION: "Product page in the shop"
+    Featured: "Featured Product"
+    Image: "Product Image"
+    ImageAltText: "{Title} image"
+    InternalItemID: "Product Code/SKU"
+    Model: Model
+    NoImage: "no image"
+    NumItemsInCartPlural: "Você tem {Quantity} itens no carrinho"
+    NumItemsInCartSingular: "Você tem um desse item no carrinho"
+    PLURALNAME: Products
+    PageTitle: "Product Title"
+    IsPurchaseable: "Is purchaseable"
+    Price: Price
+    PriceDesc: "Base price to sell this product at."
+    ProductCodeShort: SKU
+    SINGULARNAME: Produto
+    Size: Size
+    View: "View Product"
+    db_AllowPurchase: "Allow Purchase"
+    db_BasePrice: Price
+    db_Depth: Depth
+    db_Featured: Featured
+    db_Height: Height
+    db_InternalItemID: "Internal Item ID"
+    db_Model: Model
+    db_Popularity: Popularity
+    db_Weight: Weight
+    db_Width: Width
+    has_many_Variations: Variations
+    has_one_Image: Image
+    many_many_ProductCategories: "Product Categories"
+    many_many_VariationAttributeTypes: "Variation Attribute Types"
+  SilverShop\Model\Modifiers\Tax\Base:
+    AtRate: "@ {Rate}%"
+    PLURALNAME: Impostos
+    SINGULARNAME: Imposto
+    db_Rate: Taxa
+  SilverShop\Model\Modifiers\Tax\FlatTax:
+    PLURALNAME: Impostos
+    SINGULARNAME: Imposto
+  SilverShop\Model\Modifiers\Tax\GlobalTax:
+    Included: " (incluido no preco acima)"
+    PLURALNAME: Impostos
+    SINGULARNAME: Imposto
+    db_Country: País
+  SilverShop\Generic:
+    Change: Change
+    Customer: Cliente
+    Date: Data
+    DateFormatNice: "%m/%d/%G"
+    DateTimeFormatNice: "%m/%d/%G %I:%M%p"
+    DateTimeFormatNice24: "d/m/Y H:i"
+    DevToolsTitle: "Shop Development Tools"
+    Edit: Editar
+    Quantity: Quantidade
+    ReadMoreTitle: 'Click here to read more on "{Title}"'
+    Remove: Remover
+    View: visualisar
+  SilverShop\Model\Order:
+    BillTo: "Bill To"
+    Date: Data
+    DateFrom: "Date from"
+    DateTo: "Date to"
+    GrandTotal: "Grand Total"
+    Invoice: Invoice
+    OrderHeadline: "Pedido #{OrderNo} - {OrderDate}"
+    Outstanding: Outstanding
+    OutstandingWithAmount: "A ser pago: {Amount}"
+    PLURALNAME: Pedidos
+    Print: Print
+    Quantity: Quantidade
+    SINGULARNAME: Pedido
+    STATUS_ADMINCANCELLED: "Cancelado por voce"
+    STATUS_CART: Carrinho
+    STATUS_COMPLETE: Completo
+    STATUS_MEMBERCANCELLED: "Cancelado pelo cliente"
+    STATUS_PAID: Pago
+    STATUS_PROCESSING: Encaminhado e processando
+    STATUS_SENT: Enviado
+    STATUS_UNPAID: Falta pagar
+    ShipTo: "Local de entrega"
+    SubTotal: Sub-total
+    Total: Total
+    TotalOutstanding: "Total a ser pago"
+    TotalPrice: "Preço total"
+    TotalPriceWithCurrency: "Preço total ({Currency})"
+    UnitPrice: "Preço de Unidade"
+    db_Dispatched: Dispatched
+    db_Email: Email
+    db_FirstName: "Nome"
+    db_IPAddress: "IP Address"
+    db_Notes: Mensagem
+    db_Paid: Paid
+    db_Placed: Placed
+    db_Printed: Printed
+    db_ReceiptSent: "Receipt Sent"
+    db_Reference: Reference
+    db_SeparateBillingAddress: "Separate Billing Address"
+    db_Status: Status
+    db_Surname: Sobrenome
+    db_Total: Total
+    has_many_Items: Items
+    has_many_Modifiers: Modifiers
+    has_many_OrderStatusLogs: "Order Status Logs"
+    has_many_Payments: Payments
+    has_one_BillingAddress: "Billing Address"
+    has_one_Member: Member
+    has_one_ShippingAddress: "Shipping Address"
+  SilverShop\Page\CheckoutPage:
+    DESCRIPTION: "Page that handles the checkout-process."
+    DefaultTitle: Checkout
+    PLURALNAME: "Checkout Pages"
+    PaymentErrorMessage: "Received error from payment gateway:"
+    ProceedToPayment: "Finalizar o pedido"
+    PurchaseCompleteDescription: "This message is included in reciept email, after the customer submits the checkout."
+    SINGULARNAME: "Checkout Page"
+    SubmitPayment: "Submit Payment"
+    db_PurchaseComplete: "Purchase Complete"
+  SilverShop\Model\Modifiers\OrderModifier:
+    PLURALNAME: Modifiers
+    SINGULARNAME: Modifier
+    db_Amount: Valor
+    db_Sort: Sort
+    db_Type: Type
+  SilverShop\Payment:
+    Note: Note
+    PaymentsHeadline: Pagamento(s)

@@ -19,7 +19,7 @@ use SilverStripe\ORM\FieldType\DBCurrency;
 class OrderItem extends OrderAttribute
 {
     private static $db = [
-        'Quantity' => 'Int',
+        'Quantity' => 'Float',
         'UnitPrice' => 'Currency',
     ];
 

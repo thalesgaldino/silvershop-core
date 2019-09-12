@@ -19,15 +19,15 @@ class SinglePageCheckoutComponentConfig extends CheckoutComponentConfig
     {
         parent::__construct($order);
         $this->addComponent(CustomerDetails::create());
-        $this->addComponent(ShippingAddress::create());
-        $this->addComponent(BillingAddress::create());
-        if (Checkout::member_creation_enabled() && !Security::getCurrentUser()) {
-            $this->addComponent(Membership::create());
-        }
+        // $this->addComponent(ShippingAddress::create());
+        // $this->addComponent(BillingAddress::create());
+        // if (Checkout::member_creation_enabled() && !Security::getCurrentUser()) {
+            // $this->addComponent(Membership::create());
+        // }
         if (count(GatewayInfo::getSupportedGateways()) > 1) {
             $this->addComponent(Payment::create());
         }
         $this->addComponent(Notes::create());
-        $this->addComponent(Terms::create());
+        // $this->addComponent(Terms::create());
     }
 }

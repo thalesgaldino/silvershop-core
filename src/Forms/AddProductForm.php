@@ -20,6 +20,8 @@ use SilverStripe\Forms\RequiredFields;
 use SilverStripe\Forms\Validator;
 use SilverStripe\ORM\DataObject;
 
+use SilverStripe\Dev\Debug;
+
 /**
  * @package shop
  */
@@ -84,7 +86,7 @@ class AddProductForm extends Form
             $saveabledata = (!empty($this->saveablefields)) ? Convert::raw2sql(
                 array_intersect_key($data, array_combine($this->saveablefields, $this->saveablefields))
             ) : $data;
-            $quantity = isset($data['Quantity']) ? (int)$data['Quantity'] : 1;
+            $quantity = isset($data['Quantity']) ? floatval($data['Quantity']) : 1;
             $cart->add($buyable, $quantity, $saveabledata);
             if (!ShoppingCartController::config()->direct_to_cart_page) {
                 $form->SessionMessage($cart->getMessage(), $cart->getMessageType());
@@ -127,8 +129,10 @@ class AddProductForm extends Form
         } else {
             $fields->push(
                 NumericField::create('Quantity', _t('SilverShop\Generic.Quantity', 'Quantity'), 1)
+                    ->setHTML5(true)
                     ->setAttribute('type', 'number')
-                    ->setAttribute('min', '0')
+                    ->setAttribute('min', '1')
+                    ->setScale(1)
             );
         }
 

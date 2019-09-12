@@ -90,7 +90,7 @@ class ShopQuantityField extends ViewableData
             $this->MainID() . '_Quantity',
             // this title currently doesn't show up in the front end, better assign a translation anyway.
             _t('SilverShop\Model\Order.Quantity', 'Quantity')
-        )->setHTML5(true)->setScale(2)->setValue($this->item->Quantity);
+        )->setHTML5(true)->setScale(2)->setValue($this->item->Quantity);// if the numeric is editable, the float default only works if you use this function: setValue
 
         if ($this->config()->max > 0) {
             $field->setAttribute("max", $this->config()->max);

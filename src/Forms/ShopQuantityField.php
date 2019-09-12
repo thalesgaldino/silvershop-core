@@ -89,9 +89,8 @@ class ShopQuantityField extends ViewableData
         $field = NumericField::create(
             $this->MainID() . '_Quantity',
             // this title currently doesn't show up in the front end, better assign a translation anyway.
-            _t('SilverShop\Model\Order.Quantity', 'Quantity'),
-            $this->item->Quantity
-        )->setHTML5(true);
+            _t('SilverShop\Model\Order.Quantity', 'Quantity')
+        )->setHTML5(true)->setScale(2)->setValue($this->item->Quantity);
 
         if ($this->config()->max > 0) {
             $field->setAttribute("max", $this->config()->max);

@@ -95,6 +95,9 @@ class ShopQuantityField extends ViewableData
         if ($this->config()->max > 0) {
             $field->setAttribute("max", $this->config()->max);
         }
+        $field->setAttribute("data-id", $this->item->ID);
+        $field->setAttribute("data-default-value", $this->item->Quantity);
+        $field->addExtraClass("js-cart-quantity-input cart-quantity-input");
 
         return $field;
     }

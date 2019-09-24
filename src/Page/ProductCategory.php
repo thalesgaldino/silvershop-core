@@ -6,6 +6,8 @@ use Page;
 use SilverShop\Extension\ProductVariationsExtension;
 use SilverStripe\i18n\i18nEntityProvider;
 use SilverStripe\ORM\DataList;
+use SilverStripe\Forms\DropdownField;
+use SilverStripe\Forms\FieldList;
 
 /**
  * Product Category provides a way to hierartically categorise products.

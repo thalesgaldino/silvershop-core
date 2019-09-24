@@ -151,6 +151,8 @@ class Product extends Page implements Buyable
             function (FieldList $fields) use ($self) {
                 $fields->fieldByName('Root.Main.Title')
                     ->setTitle(_t(__CLASS__ . '.PageTitle', 'Product Title'));
+                $fields->fieldByName('Root.Main.Content')
+                    ->setTitle(_t(__CLASS__ . '.Content', 'Description'));
 
                 $fields->addFieldsToTab('Root.Main', [
                     TextField::create('InternalItemID', _t(__CLASS__ . '.InternalItemID', 'Product Code/SKU'), '', 30),
@@ -175,46 +177,47 @@ class Product extends Page implements Buyable
                     ]
                 );
 
-                $fieldSubstitutes = [
-                    'LengthUnit' => $self::config()->length_unit
-                ];
+                //Commenting temporarily
+                // $fieldSubstitutes = [
+                //     'LengthUnit' => $self::config()->length_unit
+                // ];
 
-                $fields->addFieldsToTab(
-                    'Root.Shipping',
-                    [
-                    TextField::create(
-                        'Weight',
-                        _t(
-                            __CLASS__ . '.WeightWithUnit',
-                            'Weight ({WeightUnit})',
-                            '',
-                            [
-                            'WeightUnit' => self::config()->weight_unit
-                            ]
-                        ),
-                        '',
-                        12
-                    ),
-                    TextField::create(
-                        'Height',
-                        _t(__CLASS__ . '.HeightWithUnit', 'Height ({LengthUnit})', '', $fieldSubstitutes),
-                        '',
-                        12
-                    ),
-                    TextField::create(
-                        'Width',
-                        _t(__CLASS__ . '.WidthWithUnit', 'Width ({LengthUnit})', '', $fieldSubstitutes),
-                        '',
-                        12
-                    ),
-                    TextField::create(
-                        'Depth',
-                        _t(__CLASS__ . '.DepthWithUnit', 'Depth ({LengthUnit})', '', $fieldSubstitutes),
-                        '',
-                        12
-                    ),
-                    ]
-                );
+                // $fields->addFieldsToTab(
+                //     'Root.Shipping',
+                //     [
+                //     TextField::create(
+                //         'Weight',
+                //         _t(
+                //             __CLASS__ . '.WeightWithUnit',
+                //             'Weight ({WeightUnit})',
+                //             '',
+                //             [
+                //             'WeightUnit' => self::config()->weight_unit
+                //             ]
+                //         ),
+                //         '',
+                //         12
+                //     ),
+                //     TextField::create(
+                //         'Height',
+                //         _t(__CLASS__ . '.HeightWithUnit', 'Height ({LengthUnit})', '', $fieldSubstitutes),
+                //         '',
+                //         12
+                //     ),
+                //     TextField::create(
+                //         'Width',
+                //         _t(__CLASS__ . '.WidthWithUnit', 'Width ({LengthUnit})', '', $fieldSubstitutes),
+                //         '',
+                //         12
+                //     ),
+                //     TextField::create(
+                //         'Depth',
+                //         _t(__CLASS__ . '.DepthWithUnit', 'Depth ({LengthUnit})', '', $fieldSubstitutes),
+                //         '',
+                //         12
+                //     ),
+                //     ]
+                // );
 
                 if (!$fields->dataFieldByName('Image')) {
                     $fields->addFieldToTab(

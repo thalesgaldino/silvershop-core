@@ -158,4 +158,27 @@ class ProductCategory extends Page implements i18nEntityProvider
 
         return $entities;
     }
+
+    /**
+     * Add product fields to CMS
+     *
+     * @return FieldList updated field list
+     */
+    public function getCMSFields()
+    {
+        $self = $this;
+
+        $this->beforeUpdateCMSFields(
+            function (FieldList $fields) use ($self) {
+
+                $fields->addFieldsToTab('Root.Main', [
+                    DropdownField::create('ParentID', _t(__CLASS__ . '.Parent', 'Parent'), $this::get()->map('ID', 'Title'))
+                        ->setDescription(_t(__CLASS__ . '.ParentDescription', 'This is the parent page.')),
+                ], 'Content');
+
+            }
+        );
+
+        return parent::getCMSFields();
+    }
 }

@@ -355,7 +355,7 @@ pt:
     NoPastOrders: 'Nenhum pedido feito ainda.'
     NumberOfOrders: 'Número de pedidos'
     PLURALNAME: 'Account Pages'
-    PastOrders: 'Pedidos feitos'
+    PastOrders: 'Meus Pedidos Feitos'
     SINGULARNAME: 'Account Page'
     Title: 'Minha conta'
   SilverShop\Page\AccountPage_AddressBook:

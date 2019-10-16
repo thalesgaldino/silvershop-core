@@ -132,7 +132,6 @@ class AddProductForm extends Form
                     ->setHTML5(true)
                     ->setAttribute('type', 'number')
                     ->setAttribute('min', '1')
-                    ->setScale(1)
             );
         }
 

@@ -20,7 +20,7 @@ pt:
     ItemsInCartSingular: 'PT There is <a href="{link}">1 item</a> in your cart.'
     NoCartFound: 'PT No cart found.'
     NoCartInitialised: 'PT no cart initialised'
-    NoItems: 'PT There are no items in your cart.'
+    NoItems: 'Seu carrinho está vazio.'
     NoOrder: 'PT No current order.'
     ProceedToCheckout: 'Finalizar pedido'
     ProductNotFound: 'PT Product not found.'
@@ -50,8 +50,8 @@ pt:
   SilverShop\Checkout\OrderProcessor:
     CantPay: "Order can't be paid for."
     InvalidGateway: "`{gateway}` isn't a valid payment gateway."
-    NoItems: 'Order has no items.'
-    NoOrder: 'Order does not exist.'
+    NoItems: 'O pedido está vazio.'
+    NoOrder: 'Pedido não existe.'
     NoOrderStarted: 'A new order has not yet been started.'
     NotCart: 'Order is not a cart.'
   SilverShop\Checkout\Step\Address:
@@ -143,14 +143,14 @@ pt:
   SilverShop\Includes\PriceTag:
     SAVE: Save
   SilverShop\Includes\ProductGroup:
-    Next: next
-    Page: Page
+    Next: Próximo
+    Page: Pagina
     Previous: previous
     ViewNext: 'View the next page'
     ViewPage: 'View page number {pageNum}'
     ViewPrevious: 'View the previous page'
   SilverShop\Includes\ProductMenu:
-    GotoPageTitle: 'Go to the {Title} page'
+    GotoPageTitle: 'Vá para a página {Title}'
   SilverShop\Model\Address:
     AddressHint: 'street / thoroughfare number, name, and type or P.O. Box'
     AddressLine2Hint: 'premises, building, apartment, unit, floor'
@@ -384,10 +384,11 @@ pt:
     PLURALNAME: 'Checkout Pages'
     PaymentErrorMessage: 'Received error from payment gateway:'
     ProceedToPayment: 'Finalizar o pedido'
-    PurchaseCompleteDescription: 'This message is included in reciept email, after the customer submits the checkout.'
+    PurchaseCompleteDescription: 'Essa mensagem está inclusa no recibo por email, depois que o consumidor enviar pedido no carrinho.'
     SINGULARNAME: 'Checkout Page'
     SubmitPayment: 'Submit Payment'
     db_PurchaseComplete: 'Purchase Complete'
+    GoShopping: Começar compras
   SilverShop\Page\Product:
     AddToCart: 'Adicionar ao carrinho'
     AddToCartTitle: 'Add "{Title}" to your cart'

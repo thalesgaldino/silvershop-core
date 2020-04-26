@@ -34,7 +34,7 @@ pt:
     MembershipIsNotAllowed: 'Creating new memberships is not allowed'
     NoPaymentMethod: 'Payment method does not exist'
     PasswordRequired: 'A password is required'
-    TermsAndConditionsLink: 'I agree to the terms and conditions stated on the <a href="{TermsPageLink}" target="new" title="Read the shop terms and conditions for this site">{TermsPageTitle}</a> page'
+    TermsAndConditionsLink: 'Eu concordo com os termos de uso descritos na página <a href="{TermsPageLink}" target="new" title="Leia os termos de uso do site da Sabor do Trigo">{TermsPageTitle}</a>'
   SilverShop\Checkout\CheckoutField:
     AccountInfo: 'Please choose a password, so you can login and check your order history in the future'
     MemberLoginInfo: 'If you are already a member please <a href="{LoginUrl}">log in</a>'

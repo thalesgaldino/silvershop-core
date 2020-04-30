@@ -192,11 +192,11 @@ pt:
     SINGULARNAME: Shipping
   SilverShop\Model\Modifiers\Shipping\Pickup:
     PLURALNAME: Modifiers
-    SINGULARNAME: 'Pick Up Shipping'
+    SINGULARNAME: 'Retirada na loja'
   SilverShop\Model\Modifiers\Shipping\Simple:
-    PLURALNAME: 'Simple Shipping Modifiers'
-    SINGULARNAME: Shipping
-    ShipToCountry: 'Ship to {Country}'
+    PLURALNAME: 'Modificadores de entrega simples'
+    SINGULARNAME: Entrega
+    ShipToCountry: 'Entrega para {Country}'
     db_Country: Country
   SilverShop\Model\Modifiers\Shipping\Weight:
     PLURALNAME: 'Weight Shipping Modifiers'
